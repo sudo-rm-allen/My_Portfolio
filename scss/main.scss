@@ -56,8 +56,10 @@ main {
   .icons {
     margin-top: 1rem;
 
+
     a {
       padding: 0.4rem;
+      color: set-text-color($primary-color);
 
       &:hover {
         color: $secondary-color;
