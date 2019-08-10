@@ -15,6 +15,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.text-c {
+  color: red;
+}
+
 // Headings
 h1,
 h2,
@@ -90,8 +94,11 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
-    height: 200px;
+    height: auto;
     width: 200px;
+    //image-orientation: from-image;
+    //position: fixed;
+    ;
   }
 
   .bio {
