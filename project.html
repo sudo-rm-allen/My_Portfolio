@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .row {
+            margin-bottom: 40px;
+        }
+
+        .heading {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+    <title>Investment Calc</title>
+
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>
+            Calculate Your funds
+
+        </h1>
+    </div>
+
+    <div class="container">
+
+
+
+        <form name="invest">
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Pay</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="pay" placeholder="Amount of pay">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Index Funds</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="stock" placeholder="65%">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Use</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="use" placeholder="5%">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Savings</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="saving" placeholder="20%">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">Bitcoin</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bitcoin" placeholder="10%">
+                </div>
+            </div>
+
+
+
+
+
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="myFunction()">Calculate</button>
+
+
+
+
+        </form>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.invest.pay.value;
+            document.invest.stock.value = (x * 0.65).toFixed(2);
+            document.invest.saving.value = (x * 0.2).toFixed(2);
+            document.invest.use.value = (x * 0.05).toFixed(2);
+            document.invest.bitcoin.value = (x * 0.1).toFixed(2);
+        }
+    </script>
+
+</body>
+
+</html>
