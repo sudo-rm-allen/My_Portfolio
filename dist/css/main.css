@@ -162,7 +162,7 @@ main {
   .projects img {
     width: 100%;
     border: 3px #fff solid;
-    min-height: 200px; }
+    height: 200px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: red;
