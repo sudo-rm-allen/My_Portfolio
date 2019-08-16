@@ -4,7 +4,6 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-
 // Set Initial State Of Menu
 let showMenu = false;
 
@@ -31,4 +30,16 @@ function toggleMenu() {
         // Set Menu State
         showMenu = false;
     }
+}
+
+function myFunction() {
+    var x = document.invest.pay.value;
+    document.invest.stock.value = (x * 0.65).toFixed(2);
+    document.invest.saving.value = (x * 0.2).toFixed(2);
+    document.invest.use.value = (x * 0.05).toFixed(2);
+    document.invest.bitcoin.value = (x * 0.1).toFixed(2);
+}
+
+function onClick() {
+    return confirm('Are you sure?');
 }
